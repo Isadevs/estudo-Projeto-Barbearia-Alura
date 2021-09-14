@@ -1,0 +1,61 @@
+/*3º forma de utilizar o CSS*, Deve-se colocar todos na mesma estrutura do HTML
+
+Formas de estilizar os elementos:
+* Tag
+* Identificador
+* Classes*/
+
+body {
+    background: #ffffff;/*Muda a cor de fundo do elemento*/
+}
+#banner{
+    width: 100%; /*Largura*/
+}
+
+.principal{
+    background: gray;
+    padding: 30px;
+}
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
+.titulo-central{
+    text-align: center;
+}
+
+p {
+    text-align: center;
+} 
+
+#missao{
+    text-align: center;
+}
+em strong { /*em strong informa a cor específica de um determinado parágrago*/
+    color: red;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios {
+    background: #ffffff;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block; /* Só ocupa o tamanho do seu conteúdo */
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagembeneficios{
+    width: 50%;
+}
+
+
+
+

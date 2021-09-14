@@ -1,0 +1,74 @@
+<!--INDEX -- É O NOME DO ARQUIVO PRINCIPAL DA MINHA PÁGINA-->
+
+<!DOCTYPE html><!--Estrutura o conteúdo para passar as informações ao navegador 
+da forma correta !, informa que essa tag precisa ser identificada como doctype 
+e a outra informação seria informar qual a versão do HTML que se está  usando, 
+no nosso caso a versão 5, e ela atende aos nossos requisitos -->
+
+<html lang="pt-br"> <!--HMTL, tag de conteúdo informa o HTML que vai ser 
+renderizado no navegdor-->
+    <head> <!--Cabeça, informações que estamos passando ao navegador-->
+
+        <meta charset="UTF-8"> <!--Tag Meta charset (conjunto de caracters), 
+        passa informações ao navegador, a propriedade informa que aqui tem todas 
+        as maiorias das línguas Europa, América etc... É preciso apontar para o 
+        navegador que estamos usando um dicionário que tem acentos e cedilha.-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barbearia Alura</title> <!--Coloca o nome página-->
+        <link rel="stylesheet" href="style.css">
+
+         <!--MARCAÇÃO DO CSS 2º Forma:-->
+         <style>  
+            p {
+                text-align: center;
+            }
+        </style>  
+
+    </head>
+
+    <body> <!--Corpo, informações que estamos querendo que exiba na página-->
+        <header>
+            <h1>Barbearia Alura </h1><!-- Primeira informação a ser recebida-->
+        </header>
+        <img id="banner" src="banner.jpg" alt="Barbearia Alura"> <!--id = identificador, src é abreviação de source-->
+
+        <!--1ª SESSÃO-->
+
+        <div class="principal">            
+            <h1 id="missão" > Sobre a Barbearia Alura</h1> <!--CSS in-line, 1ª forma de 
+                escrever o CSS significa atribuir o CSS Na tag do código-->
+
+            <p> Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o 
+            <!--STRONG MARCA FORTE É O NEGRITO--> que há de melhor para o seu cabelo e barba. Fundada em 2019, 
+            a  Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+            <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".
+            <!--EM MARCA FORTE É O NEGRITO--></strong></em> </p>
+
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+            O atendimento possui padrão de excelência e agilidade, garantindo qualidade e 
+            satisfação dos nossos clientes.</p>
+        </div>
+
+        <!--2ª SESSÃO-->
+        <div class="beneficios">
+            <h2>Benefícios </h2>
+
+            <!--Listar os benefícios-->
+            <!--Existem listas ordenadas (OL) e não ordenadas (UL) e (Li) marca cada um dos itens -->
+                <ul>
+                    <li class="itens">Atendimento</li>
+                    <li class="itens">Espaço diferenciado</li>
+                    <li class="itens">Localização</li>
+                    <li class="itens">Profissionais qualificados</li>
+                </ul>
+            <img src="beneficios.jpg" alt="Beneficios Barbearia" class="imagembeneficios">
+            
+        </div>
+    </body>
+</html>
+
+
+
+

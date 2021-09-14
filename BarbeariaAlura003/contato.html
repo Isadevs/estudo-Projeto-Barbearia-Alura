@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css"> <!--LIMPA TUDO O QUE O NAVEGADOR FAZ-->
+    <link rel="stylesheet" href="contato.css">
+
+</head>
+    <body>
+    <!--CABEÇALHO FEITO NO = HEADER, tag mais semântica para cabeçalho-->
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+
+                <!--MENU / LISTA DE LINKS / ESTRUTURA DE NAVEGAÇÃO-->
+                <Nav>
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contatos</a></li>
+                    </ul>
+                </Nav>
+            </div>
+        </header>
+        
+        <main>
+            <!--FORMULÁRIO-->
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label> <!--Informação para que serve aquela entrada 
+                de dados-->
+                <input type="text" id="nomesobrenome" class="input-padrao" required> <!--REQUIRED QUER DIZER 
+                OBRIGATÓRIO-->
+
+                <label for="email">e-mail</label>
+                <input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> 
+                <!--placeholder sugere como aquele campo deve ser preenchido -->
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" class="input-padrao" required placeholder="(xx) x xxxx xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!--COLS: Número de 
+                Colunas que aquele conteúdo vai ter rows é o número de linhas-->
+                
+                <!--CAMPO DE SELECIONAR-->
+                <fieldset>
+                    <!--Fieldset semântica para usar em formulário ou grupo de dados--> 
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contato" 
+                    value="email" id="radio-email">e-mail</label>
+                
+                    <label for="radio-telefone"><input type="radio" name="contato" 
+                        value="telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-whatshapp"><input type="radio" name="contato" 
+                    value="whatshapp" id="radio-whatshapp" checked>Whatshapp </label> <!--Checked marca no automatico-->
+                </fieldset>    
+                <!--SELECT-->
+                <fieldset>
+                    <legend>Qual horário gostaria de ser atendido?</legend>
+                    <!--<legend> é usada para um título de um grupo de campos em qualquer formulário-->
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="chatbox"><input type="checkbox" checked>Gostaria de Receber nossas novidades por e-mail?</label>
+
+                <input type="submit" name="contato" value="Enviar formulário" class="enviar">
+                <!--submit envia dados-->
+            </form>
+                <!--CRIAÇÃO DE TABELA-->
+                <table>
+                    <thead> <!--Cabeçalho da tabela-->
+                        <tr>
+                            <th>Dia</th>
+                            <th>horário</th>
+                        </tr>
+                    </thead>
+                        <tbody> <!--Corpo da tabela-->
+                            <tr>
+                                <td>Segunda</td>
+                                <td>08:00h ás 20:00h</td>
+                            </tr>
+                            <tr> <!--<tr> para marcar uma linha de uma tabela-->
+                                <td>Terça</a></td> <!--Utilizamos a tag <td> para marcar uma coluna de uma tabela-->
+                                <td>08:00h ás 20:00h</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta</td>
+                                <td>08:00h ás 20:00h</td>
+                            </tr>
+                        </tbody>        
+                </table>
+        </main>
+
+        <!--RODAPÉ--> 
+        <footer>
+            <img src="logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright"> &copy; Copyright Barbearia Alura - 2019</p> <!--&copy;CODE UNICODE-->
+        </footer>
+    </body>
+</html>
